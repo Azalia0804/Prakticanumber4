@@ -1,0 +1,20 @@
+input_string = input("Введите строку: ")
+output_string = ""
+for i in range(len(input_string)):
+    if i % 2 == 0:
+        output_string += input_string[i].upper()
+    else:
+        output_string += input_string[i]
+print(output_string)
+
+
+number = int(input("Введите число до 1000: "))
+for i in range(1, number+1):
+    print(str(i).zfill(4))
+collection = []
+for i in range(1, 6):
+    element = int(input("Введите элемент {}: ".format(i)))
+    collection.append(element)
+print("Элементы в обратном порядке:")
+for item in collection:
+    print(item, end='')
